@@ -25,24 +25,28 @@ setTimeout(function(){
   }, 2000)
 }, 7000)
 
-setTimeout(function(){
-  $('.tweets').addClass('appear')
+function load_tweets(){
   setTimeout(function(){
-    $('.tweets').css({'opacity':'1','display':'block','transform':'scale(1) translate(-50%,-50%)'})
+    $('.tweets').addClass('appear')
     setTimeout(function(){
-      $('.tweets').addClass('disapear')
+      $('.tweets').css({'opacity':'1','display':'block','transform':'scale(1) translate(-50%,-50%)'})
       setTimeout(function(){
-        $('.tweets').removeClass('disapear')
-        $('.tweets').addClass('appear')
+        $('.tweets').addClass('disapear')
+        setTimeout(function(){
+          $('.tweets').removeClass('disapear')
+          $('.tweets').addClass('appear')
 
 
-      }, 2000)
-    }, 5000)
-  }, 2000)
-}, 9000)
+        }, 2000)
+      }, 5000)
+    }, 2000)
+  }, 9000)
+}
+load_tweets();
 
 setInterval(function(){
   twitterFetcher.fetch(config1);
+load_tweets()
 }, 9000)
 
 });
