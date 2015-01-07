@@ -90,6 +90,7 @@ body {
   -webkit-transform: scale(0) translate(-150%, -150%);
   transform: scale(0) translate(-150%, -150%);
   color: #fff;
+  text-align: center;
 }
 .tweets.appear {
   -webkit-animation: appear 2s ease;
