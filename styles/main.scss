@@ -140,3 +140,9 @@ body{
         opacity: 0;
     }
 } 
+
+@media all and (max-width: 768px){
+    :root{
+        font-size: 1.5rem;
+    }
+}
