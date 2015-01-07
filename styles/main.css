@@ -98,12 +98,17 @@ body {
 }
 
 .twitter {
-  width: 100px;
+  width: 60px;
   position: absolute;
-  bottom: 0;
+  bottom: .5em;
   left: 0;
   right: 0;
   margin: auto;
+  opacity: .2;
+  transition: opacity .3s ease;
+}
+.twitter:hover {
+  opacity: 1;
 }
 
 @-webkit-keyframes appear {

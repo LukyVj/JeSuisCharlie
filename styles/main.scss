@@ -21,7 +21,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
-    font-family: "Nimbus", Helvetica, sans-serif;
+  font-family: "Nimbus", Helvetica, sans-serif;
 }
 
 ul{
@@ -100,12 +100,19 @@ body{
 }
 
 .twitter{
-    width: 100px;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
+    width: 60px;
+    position: absolute;
+    bottom: .5em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: .2;
+    transition: opacity .3s ease;
+
+
+    &:hover{
+        opacity: 1;
+    }
 }
 
 @keyframes appear{
