@@ -23,6 +23,9 @@ ul a {
   color: #CECFD4;
   margin: .1em;
 }
+ul img {
+  border-radius: 100%;
+}
 
 html, body {
   float: left;
