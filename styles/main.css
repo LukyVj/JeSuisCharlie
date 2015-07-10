@@ -23,6 +23,9 @@ ul a {
   color: #CECFD4;
   margin: .1em;
 }
+ul img {
+  border-radius: 100%;
+}
 
 html, body {
   float: left;
@@ -87,6 +90,7 @@ body {
   -webkit-transform: scale(0) translate(-150%, -150%);
   transform: scale(0) translate(-150%, -150%);
   color: #fff;
+  text-align: center;
 }
 .tweets.appear {
   -webkit-animation: appear 2s ease;
@@ -158,5 +162,10 @@ body {
     -webkit-transform: scale(0) translate(50%, 50%);
     transform: scale(0) translate(50%, 50%);
     opacity: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  :root {
+    font-size: 1.5rem;
   }
 }

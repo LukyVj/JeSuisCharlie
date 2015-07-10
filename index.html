@@ -5,56 +5,60 @@
     <title>JeSuisCharlie</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 </head>
 <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-            <div class="container">
-                <div class="tweets" id="example1"></div>
-                <div class="zone">
-                    <h2 class="jesuis">Je Suis</h2>
-                    <h2 class="noussommes">Nous Sommes</h2>
-                    <h1>Charlie</h1>
-                </div>
-               <div class="twitter">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="LukyVJ" data-hashtags="JeSuisCharlie">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                
-               </div>
-            </div>
+     Hi, My name is Lucas Bonomi, I felt like I had to 
+     honor all the victims of the Terrible Charlie Hebdo
+     shooting in paris the 7 of january 2015. 
+ 
+     The free speech liberty will win. 
+ 
+     #JeSuisCharlie
 
-            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-            <script>
-                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                e.src='//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-                ga('create','UA-XXXXX-X');ga('send','pageview');
-            </script>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
-            <!-- build:js scripts/vendor.js -->
-            <!-- bower:js -->
-            <script src="bower_components/jquery/dist/jquery.js"></script>
-            <!-- build:js scripts/main.js -->
-            <script src="scripts/main.js"></script>
-            <script src="scripts/twitterPostFetcher.js"></script>
-            <!-- endbuild -->
-        </body>
-        </html>
+<!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="tweets" id="example1"></div>
+        <div class="zone">
+            <h2 class="jesuis">Je Suis</h2>
+            <h2 class="noussommes">Nous Sommes</h2>
+            <h1>Charlie</h1>
+        </div>
+        <div class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="LukyVJ" data-hashtags="JeSuisCharlie">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        </div>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58342739-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/twitterPostFetcher.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

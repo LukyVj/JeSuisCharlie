@@ -31,6 +31,9 @@ ul{
         color: #CECFD4;
         margin: .1em;
     }
+    img{
+        border-radius: 100%;
+    }
 }
 html, body{
     float: left;
@@ -89,6 +92,7 @@ body{
     opacity: 0;
     transform: scale(0) translate(-150%, -150%);
     color: #fff;
+    text-align: center;
 
     &.appear{
         animation: appear 2s ease;
@@ -134,5 +138,11 @@ body{
     100%{
         transform: scale(0) translate(50%, 50%);
         opacity: 0;
+    }
+} 
+
+@media all and (max-width: 768px){
+    :root{
+        font-size: 1.5rem;
     }
 }
